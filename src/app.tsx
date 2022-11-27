@@ -1,28 +1,21 @@
-import { useState } from "react";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { NotFoundPage } from "./pages/404/not-found";
+import {
+  ChallengeListPage,
+  ChallengesRoutes,
+} from "./pages/challenge-list/challenge-list-page";
+import { Home } from "./pages/home/home";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test TEST
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/challenges" element={<ChallengeListPage />} />
+        <Route path="/challenges/*" element={<ChallengesRoutes />} />
+        <Route path="/*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
