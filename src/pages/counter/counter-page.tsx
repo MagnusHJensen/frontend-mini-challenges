@@ -1,4 +1,4 @@
-import { Box, Heading, VStack } from "@chakra-ui/react";
+import { Heading, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import { Page } from "../../components/page/base-page";
 import { Adjuster } from "./components/adjuster";

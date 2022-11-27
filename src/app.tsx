@@ -1,9 +1,7 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { ChallengesRoutes } from "./challenges";
 import { NotFoundPage } from "./pages/404/not-found";
-import {
-  ChallengeListPage,
-  ChallengesRoutes,
-} from "./pages/challenge-list/challenge-list-page";
+import { ChallengeListPage } from "./pages/challenge-list/challenge-list-page";
 import { Home } from "./pages/home/home";
 
 function App() {

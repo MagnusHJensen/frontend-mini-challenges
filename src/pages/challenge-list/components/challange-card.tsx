@@ -7,7 +7,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { Challenge } from "../challenge-list-page";
+import { Challenge } from "../../../challenges";
 
 type Props = {
   challenge: Challenge;
