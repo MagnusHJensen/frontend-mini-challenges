@@ -27,13 +27,7 @@ export const ChallengeCard = ({ challenge }: Props) => {
 
 const ActiveCard = ({ challenge }: Props) => {
   return (
-    <Card
-      align="center"
-      variant="elevated"
-      minWidth="22vw"
-      maxW={{ sm: "100%", md: "49vw", lg: "23vw" }}
-      marginTop="15px"
-    >
+    <Card align="center" variant="elevated" marginTop="15px">
       <CardHeader>
         <Heading>{challenge.name}</Heading>
       </CardHeader>
@@ -47,14 +41,7 @@ const ActiveCard = ({ challenge }: Props) => {
 
 const InactiveCard = ({ challenge }: Props) => {
   return (
-    <Card
-      align="center"
-      variant="filled"
-      minWidth="22vw"
-      maxW={{ sm: "100%", md: "49vw", lg: "23vw" }}
-      marginTop="15px"
-      cursor="not-allowed"
-    >
+    <Card align="center" variant="filled" marginTop="15px" cursor="not-allowed">
       <CardHeader>
         <Heading textColor="gray.500">{challenge.name}</Heading>
       </CardHeader>
