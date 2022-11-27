@@ -42,7 +42,7 @@ export const Navbar = () => {
       </HStack>
       <Box>
         <Link
-          href="https://github.com/MagnusHJensen/frontend-challenges"
+          href="https://github.com/MagnusHJensen/frontend-mini-challenges"
           target="_blank"
         >
           <Icon width="32px" height="32px" as={FaGithub} />
