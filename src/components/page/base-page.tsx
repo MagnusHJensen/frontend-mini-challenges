@@ -9,7 +9,7 @@ export const Page = ({ children }: Props) => {
   return (
     <Box width="100%" height="100vh">
       <Navbar />
-      <Box padding="1rem">{children}</Box>
+      <Container maxWidth="container.xl">{children}</Container>
     </Box>
   );
 };

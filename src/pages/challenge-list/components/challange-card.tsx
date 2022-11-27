@@ -31,7 +31,7 @@ const ActiveCard = ({ challenge }: Props) => {
       align="center"
       variant="elevated"
       minWidth="22vw"
-      maxWidth="22vw"
+      maxW={{ sm: "100%", md: "49vw", lg: "23vw" }}
       marginTop="15px"
     >
       <CardHeader>
@@ -51,7 +51,7 @@ const InactiveCard = ({ challenge }: Props) => {
       align="center"
       variant="filled"
       minWidth="22vw"
-      maxW="22vw"
+      maxW={{ sm: "100%", md: "49vw", lg: "23vw" }}
       marginTop="15px"
       cursor="not-allowed"
     >
