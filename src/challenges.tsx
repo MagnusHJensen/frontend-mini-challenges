@@ -22,9 +22,9 @@ export const challenges: Challenge[] = [
   {
     name: "Guess The Number",
     link: "guess-the-number",
-    isActive: false,
+    isActive: true,
     element: <GuessTheNumberPage />,
-    description: "Coming Soon",
+    description: "A simple guess the number game from 0-100!",
   },
 ];
 

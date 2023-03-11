@@ -27,7 +27,7 @@ export const ChallengeCard = ({ challenge }: Props) => {
 
 const ActiveCard = ({ challenge }: Props) => {
   return (
-    <Card align="center" variant="elevated" marginTop="15px">
+    <Card align="center" variant="elevated" marginTop="15px" minHeight="200px">
       <CardHeader>
         <Heading>{challenge.name}</Heading>
       </CardHeader>
@@ -41,7 +41,13 @@ const ActiveCard = ({ challenge }: Props) => {
 
 const InactiveCard = ({ challenge }: Props) => {
   return (
-    <Card align="center" variant="filled" marginTop="15px" cursor="not-allowed">
+    <Card
+      align="center"
+      variant="filled"
+      marginTop="15px"
+      cursor="not-allowed"
+      minHeight="200px"
+    >
       <CardHeader>
         <Heading textColor="gray.500">{challenge.name}</Heading>
       </CardHeader>
